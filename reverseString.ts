@@ -18,6 +18,17 @@ const rStr2 = arr.join('')
 console.timeEnd('2')
 console.log(rStr2)
 
+console.time('reduceRight')
+const rStr3 = str
+  .split('')
+  .reduceRight((acc: string[], cur: string) => {
+    acc.push(cur)
+    return acc
+  }, [])
+  .join('')
+console.timeEnd('reduceRight')
+console.log('str3', rStr3)
+
 if (str.toLowerCase() === rStr.toLowerCase()) {
   console.log('palindrome')
 } else {
