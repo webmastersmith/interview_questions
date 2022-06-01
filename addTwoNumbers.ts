@@ -1,4 +1,4 @@
-//function that adds numbers in array and give back a reversed list
+//function that adds numbers in array and give back a summed reversed list
 class ListNode {
   val: number
   next: ListNode | null
